@@ -1,0 +1,8 @@
+Theme
+https://addons.mozilla.org/en-US/firefox/addon/arc-dark-theme-we/
+
+Extensions
+https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/
+https://addons.mozilla.org/en-US/firefox/addon/vimium-ff
+https://addons.mozilla.org/en-US/firefox/addon/reddit-enhancement-suite/
+
