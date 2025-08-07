@@ -3,9 +3,10 @@
 if ! command -v yay &>/dev/null; then
     echo "Installing yay"
     git clone https://aur.archlinux.org/yay.git
-    cd yay
-    touch testfile.txt
+    cd yay/
+    sudo makepkg -si --noconfirm
     cd ..
+    rm -rf yay
 else
-    echo "yay already installed!!"
+    echo "AUR helper (yay) already installed!!"
 fi
