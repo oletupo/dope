@@ -19,7 +19,7 @@ source $BASE_DIR/install/aur.sh
 source $BASE_DIR/install/displaymanager.sh $BASE_DIR
 
 # Install base applications
-#source $BASE_DIR/install/applications.sh
+source $BASE_DIR/install/applications.sh
 
 # Starting services
 #source $BASE_DIR/install/services.sh
