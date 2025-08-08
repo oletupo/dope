@@ -7,4 +7,4 @@ echo "Setting bashrc..."
 cp -f $BASE_DIR/data/.bashrc ~/.bashrc
 
 echo "Copying dotfiles..."
-cp -f $BASE_DIR/data/.config ~/"
+cp -Rf $BASE_DIR/data/.config ~/"
