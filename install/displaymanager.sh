@@ -2,7 +2,6 @@
 
 # Getting path from arguments
 BASE_DIR="$1"
-echo "dir: $BASE_DIR/data/lightdm"
 
 if ! command -v lightdm &>/dev/null; then
     echo "Installing display manager"

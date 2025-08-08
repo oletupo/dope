@@ -1,6 +1,15 @@
 #!/bin/bash
 
+# Getting path from arguments
+BASE_DIR="$1"
+
 echo "Downloading themes..."
-# yay -S arc-dark-jeteka
+yay -S --needed --noconfirm arc-gtk-theme
+
+#gsettings set org.gnome.desktop.interface gtk-theme "Arc-Dark"
 
 echo "Downloading fonts.."
+sudo pacman -S --needed --noconfirm ttf-jetbrains-mono ttf-nerd-fonts-symbols
+
+echo "Setting wallpaper"
+echo "cp $BASE_DIR/data/wallpaper ~/Pictures"

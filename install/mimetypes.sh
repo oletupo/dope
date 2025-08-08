@@ -4,7 +4,7 @@
 
 echo "Setting default file association and create folders" 
 
-#xdg-user-dirs-update
+xdg-user-dirs-update
 #xdg-settings set default-web-browser firefox.desktop
 
 # Open video files with mpv

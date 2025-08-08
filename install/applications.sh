@@ -1,8 +1,5 @@
 #!/bin/bash
 
-# Setting pacman.conf
-# Reflector
-# Installing pkgs
 echo "Installing base applications..."
 
 # X11
@@ -15,7 +12,7 @@ sudo pacman -S --needed --noconfirm xorg xf86-video-fbdev
 sudo pacman -S --needed --noconfirm wpa_supplicant networkmanager network-manager-applet
 
 # Audio
-sudo pacman -S --needed --noconfirm alsa-utils pavucontrol
+sudo pacman -S --needed --noconfirm pipewire alsa-utils pavucontrol
 
 # Desktop environment base apps
 sudo pacman -S --needed --noconfirm qtile picom rofi dunst polkit polkit-gnome
@@ -33,7 +30,7 @@ sudo pacman -S --needed --noconfirm firefox
 sudo pacman -S --needed --noconfirm thunar ranger thunar-volman udiskie ntfs-3g fuse gvfs gvfs-mtp 7zip
 
 # Multimedia
-sudo pacman -S --needed --noconfirm ristretto mpv yt-dlp
+sudo pacman -S --needed --noconfirm ristretto mpv yt-dlp transmission-gtk
 
 # Appearance
 sudo pacman -S --needed --noconfirm lxappearance nitrogen

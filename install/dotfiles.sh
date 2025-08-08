@@ -1,7 +1,10 @@
 #!/bin/bash
 
-echo "bashrc settings..."
+# Getting path from arguments
+BASE_DIR="$1"
+
+echo "Setting bashrc..."
+cp -f $BASE_DIR/data/.bashrc ~/.bashrc
 
 echo "Copying dotfiles..."
-
-echo "Setting wallpaper..."
+cp -f $BASE_DIR/data/.config ~/"
