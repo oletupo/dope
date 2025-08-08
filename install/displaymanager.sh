@@ -5,7 +5,7 @@ BASE_DIR="$1"
 
 if ! command -v lightdm &>/dev/null; then
     echo "Installing display manager"
-    yay -S --needed --noconfirm lightdm lightdm-gtk-greeter lightdm-gtk-greeter-settings
+    sudo pacman -S --needed --noconfirm lightdm lightdm-gtk-greeter lightdm-gtk-greeter-settings
 else
     echo "Display manager (lightdm) already installed!!"
 fi
