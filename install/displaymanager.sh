@@ -13,6 +13,11 @@ fi
 # lightdm-gtk-greeter configuration
 sudo cp -f $BASE_DIR/data/lightdm/lightdm-gtk-greeter.conf /etc/lightdm/lightdm-gtk-greeter.conf
 
+# Checking if the system backgrounds folder already exists
+if [ ! -d /usr/share/backgrounds/ ]; then
+  mkdir -p /usr/share/backgrounds/
+fi
+
 # Setting lightdm background image  
 sudo cp -f $BASE_DIR/data/lightdm/login-background.jpg /usr/share/backgrounds/login-background.jpg
 

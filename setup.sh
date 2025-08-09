@@ -12,11 +12,11 @@ source $BASE_DIR/install/hardware.sh
 # Install AUR helper
 source $BASE_DIR/install/aur.sh
 
-# Install and configure display manager
-source $BASE_DIR/install/displaymanager.sh $BASE_DIR
-
 # Install base applications
 source $BASE_DIR/install/applications.sh
+
+# Install and configure display manager
+source $BASE_DIR/install/displaymanager.sh $BASE_DIR
 
 # Starting services
 source $BASE_DIR/install/services.sh
