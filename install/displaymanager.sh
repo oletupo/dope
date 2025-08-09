@@ -15,7 +15,7 @@ sudo cp -f $BASE_DIR/data/lightdm/lightdm-gtk-greeter.conf /etc/lightdm/lightdm-
 
 # Checking if the system backgrounds folder already exists
 if [ ! -d /usr/share/backgrounds/ ]; then
-  mkdir -p /usr/share/backgrounds/
+  sudo mkdir -p /usr/share/backgrounds/
 fi
 
 # Setting lightdm background image  

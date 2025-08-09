@@ -12,4 +12,4 @@ echo "Downloading fonts.."
 sudo pacman -S --needed --noconfirm ttf-jetbrains-mono ttf-nerd-fonts-symbols
 
 echo "Setting wallpaper"
-echo "cp $BASE_DIR/data/wallpaper ~/Pictures"
+cp $BASE_DIR/data/wallpaper ~/Pictures
