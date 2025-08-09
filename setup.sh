@@ -24,14 +24,14 @@ source $BASE_DIR/install/services.sh
 # Copying dotfiles
 source $BASE_DIR/install/dotfiles.sh $BASE_DIR
 
-# Setting themes and fonts
-source $BASE_DIR/install/themes.sh $BASE_DIR
-
 # Setting credentials
 source $BASE_DIR/install/credentials.sh
 
 # Setting folders and file asociations
 source $BASE_DIR/install/mimetypes.sh
+
+# Setting themes and fonts
+source $BASE_DIR/install/themes.sh $BASE_DIR
 
 # Reboot
 echo "Setup completed!! rebooting now"
