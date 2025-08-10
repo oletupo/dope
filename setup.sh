@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Store the current working directory in a variable
+# Store the current working directory
 BASE_DIR=$(pwd)
 
 # Check prerequisites
