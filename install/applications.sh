@@ -30,13 +30,16 @@ sudo pacman -S --needed --noconfirm firefox
 sudo pacman -S --needed --noconfirm thunar ranger thunar-volman udiskie ntfs-3g fuse gvfs gvfs-mtp 7zip
 
 # Multimedia
-sudo pacman -S --needed --noconfirm ristretto mpv yt-dlp transmission-gtk
+sudo pacman -S --needed --noconfirm ristretto mpv yt-dlp transmission-gtk newsboat
 
 # Appearance
 sudo pacman -S --needed --noconfirm lxappearance nitrogen
 
 # Office
 sudo pacman -S --needed --noconfirm libreoffice-still qalculate-gtk
+
+# Fonts
+sudo pacman -S --needed --noconfirm ttf-jetbrains-mono ttf-nerd-fonts-symbols
 
 # Extras
 sudo pacman -S --needed --noconfirm btop openssh dex fzf rsync
