@@ -51,4 +51,5 @@ sudo pacman -S --needed --noconfirm cups
 sudo pacman -S --needed --noconfirm bash-completion xdg-user-dirs pacman-contrib numlockx
 
 # Python utils
-sudo pacman -S --needed --noconfirm python-dbus-next python-uv python-psutil
+sudo pacman -S --needed --noconfirm python-uv python-psutil python-dbus-fast
+# python-dbus-next -> python-dbus-fast
