@@ -31,7 +31,7 @@ wdg_menu = widget.TextBox(
 	foreground = current_theme[5],
 	text = "",
 	padding = 0,
-	mouse_callbacks = {'Button1': lambda: qtile.cmd_spawn('rofi -show drun')}
+	mouse_callbacks = {'Button1': lambda: qtile.spawn('rofi -show drun')}
 	)
 wdg_updates = widget.GenPollText(
 	padding = 0,
@@ -40,7 +40,7 @@ wdg_updates = widget.GenPollText(
 	background = current_theme[2],
 	update_interval= 900,
 	func=lambda: subprocess.check_output(os.path.expanduser("~/.config/qtile/scripts/packages.sh")).decode().strip(),
-	mouse_callbacks = {'Button1': lambda: qtile.cmd_spawn(myTerm + ' --hold -e checkupdates')}
+	mouse_callbacks = {'Button1': lambda: qtile.spawn(myTerm + ' --hold -e checkupdates')}
 	)
 wdg_test = widget.GenPollCommand(
 	cmd=['echo','hola'], 
@@ -53,7 +53,7 @@ wdg_clock = widget.Clock(
 	background = current_theme[2],
 	padding = 6,
 	format = "%d %b, %a [%H:%M:%S]",
-	mouse_callbacks = {'Button1': lambda: qtile.cmd_spawn(myTerm + ' --hold -e cal -3m')}
+	mouse_callbacks = {'Button1': lambda: qtile.spawn(myTerm + ' --hold -e cal -3m')}
 	)
 wdg_miniclock = widget.Clock(
 	fontsize = 14,
@@ -61,7 +61,7 @@ wdg_miniclock = widget.Clock(
 	background = current_theme[2],
 	padding = 0,
 	format = "%Y/%m/%d [%H:%M]",
-	mouse_callbacks = {'Button1': lambda: qtile.cmd_spawn(myTerm + ' --hold -e cal -3m')}
+	mouse_callbacks = {'Button1': lambda: qtile.spawn(myTerm + ' --hold -e cal -3m')}
 	)
 wdg_cpuload = widget.CPU(
 	format = '[{load_percent: .0f}%]',
@@ -69,7 +69,7 @@ wdg_cpuload = widget.CPU(
 	background = current_theme[2],
 	padding = 3,
 	update_interval = 3,
-	mouse_callbacks = {'Button1': lambda: qtile.cmd_spawn(myTerm + ' -e htop')}
+	mouse_callbacks = {'Button1': lambda: qtile.spawn(myTerm + ' -e htop')}
 	)
 wdg_cputemp = widget.ThermalSensor(
 	tag_sensor = 'Tctl', # AMD cpu
@@ -100,14 +100,14 @@ wdg_ram = widget.Memory(
 	fontsize = 12,
 	foreground = current_theme[5],
 	background = current_theme[2],
-	mouse_callbacks = {'Button1': lambda: qtile.cmd_spawn(myTerm + ' --hold -e top -o +%MEM')} # top -o +%MEM // free -h
+	mouse_callbacks = {'Button1': lambda: qtile.spawn(myTerm + ' --hold -e top -o +%MEM')} # top -o +%MEM // free -h
 	)		    
 wdg_nvidia_gpu = widget.GenPollText( # nvidia
 	foreground = current_theme[5],
 	background = current_theme[2],
 	update_interval= 30, 
 	func=lambda: subprocess.check_output(os.path.expanduser("~/.config/qtile/scripts/nvidia-gpu-stats.sh")).decode().strip(),
-	mouse_callbacks = {'Button1': lambda: qtile.cmd_spawn('nvidia-settings')}
+	mouse_callbacks = {'Button1': lambda: qtile.spawn('nvidia-settings')}
 	)		
 wdg_net = widget.Net(
 	fontsize = 12,
@@ -119,7 +119,7 @@ wdg_net = widget.Net(
 	background = current_theme[2],
 	padding = 0,
 	update_interval = 3,
-	#mouse_callbacks = {'Button1': lambda: qtile.cmd_spawn(myTerm + ' --hold -e ss -taunp')}
+	#mouse_callbacks = {'Button1': lambda: qtile.spawn(myTerm + ' --hold -e ss -taunp')}
 	)
 wdg_df = widget.DF(
 	fontsize = 12,
@@ -130,13 +130,13 @@ wdg_df = widget.DF(
 	partition= '/home',
 	format='󰜥 {uf}G [{r: .0f}%]', # 󰜥 󰿠 
 	update_interval=300,
-	mouse_callbacks = {'Button1': lambda: qtile.cmd_spawn(myTerm + ' --hold -e df -h')}
+	mouse_callbacks = {'Button1': lambda: qtile.spawn(myTerm + ' --hold -e df -h')}
 	)
 wdg_volicon = widget.TextBox(
 	foreground = current_theme[5],
 	fontsize = 13,
 	text = "", #  󰕾
-	mouse_callbacks = {'Button1': lambda: qtile.cmd_spawn('pavucontrol')}
+	mouse_callbacks = {'Button1': lambda: qtile.spawn('pavucontrol')}
 	)		
 wdg_volprct = widget.Volume(
 	foreground = current_theme[5],

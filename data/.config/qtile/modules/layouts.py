@@ -25,7 +25,7 @@ layouts = [
     #layout.Stack(num_stacks=2),
     #layout.Zoomy(),
     #layout.TreeTab(sections=['Tabs:'], panel_width=85, bg_color="#2F343F", fontsize=10, place_right=True),
-    layout.Floating(margin=3, border_width=1, border_focus="#fba922", border_normal="#fba922"),
+    layout.Floating(margin=3, border_width=4, border_focus="#fba922", border_normal="#fba922"),
 ]
 
 # Floating windows rules
